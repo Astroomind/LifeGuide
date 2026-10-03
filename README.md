@@ -29,7 +29,7 @@ Everyday tasks pile up, and most people juggle a separate app for each part of t
 ## Architecture
 
 ```
-LifeGuide.sln
+LifeGuide.slnx
 ├── LifeGuide.Core    → Domain models, interfaces and business rules (no dependencies)
 ├── LifeGuide.Data    → EF Core DbContext, SQLite, repositories
 ├── LifeGuide.App     → .NET MAUI Blazor Hybrid UI
