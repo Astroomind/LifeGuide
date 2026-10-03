@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LifeGuide.App/LifeGuide.App.csproj" />
+  <Project Path="LifeGuide.Core/LifeGuide.Core.csproj" />
+  <Project Path="LifeGuide.Data/LifeGuide.Data.csproj" />
+  <Project Path="LifeGuide.Tests/LifeGuide.Tests.csproj" />
+</Solution>
