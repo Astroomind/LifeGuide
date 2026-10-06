@@ -1,19 +1,18 @@
-﻿using System;
-namespace LifeGuide.Core.Models;
+﻿namespace LifeGuide.Core.Models;
 
-public class Class1
+public class TodoItem
 {
-		public int Id { get; set; } = 0;
+    public int Id { get; set; }
 
-	    required public string Title { get; set; }
-	     
-	    public string? Notes { get; set; }
+    public required string Title { get; set; }
 
-	    public bool IsCompleted { get; set; } = true;
+    public string? Notes { get; set; }
 
-	    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public bool IsCompleted { get; set; }
 
-	    public DateTime? CompletedAt { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-	    public DateTime? DueDate { get; set; }
+    public DateTime? CompletedAt { get; set; }
+
+    public DateTime? DueDate { get; set; }
 }
