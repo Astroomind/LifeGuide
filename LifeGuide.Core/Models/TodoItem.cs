@@ -11,13 +11,17 @@ public class TodoItem
     public bool IsCompleted => CompletedAt is not null;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
     public DateTime? CompletedAt { get; set; }
 
     public DateTime? DueDate { get; set; }
 
+
     public void MarkComplete()
     {
-        CompletedAt = DateTime.Now;
+        if (IsCompleted) return;
+
+        CompletedAt = DateTime.UtcNow;
     }
 
     public void MarkIncomplete()
